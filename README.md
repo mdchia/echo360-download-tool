@@ -11,15 +11,16 @@ A modification of [Brendan Weibrecht's](https://github.com/ZimbiX) Echo360 JS do
 javascript:function getScript(url,success){var head=document.getElementsByTagName('head')[0],done=!1,script=document.createElement('script');script.src=url,script.onload=script.onreadystatechange=function(){done||this.readyState&&'loaded'!=this.readyState&&'complete'!=this.readyState||(done=!0,success())},head.appendChild(script)}getScript('https://code.jquery.com/jquery-1.11.2.min.js',function(){getScript('https://raw.githubusercontent.com/mdchia/echo360-download-tool/master/echo360-download-tool.js',function(){})});
 ```
 
-![Make a bookmark](/setup-img/step2a.png)
+![Make a bookmark](/setup-img/step2a.jpg)
 
-![Add code to location field](/setup-img/step2b.png)
+![Add code to location field](/setup-img/step2b.jpg)
 
 ## Usage
 
 1. Access the Echo360 page for your course.
 2. Right-click the center of the page and click "This Frame" > "Show only this frame"
-3. Click the bookmark you made and wait until it gives you an alert.
+
+1. Click the bookmark you made and wait until it gives you an alert.
 
 The basic idea is as follows:
 
