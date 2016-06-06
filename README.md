@@ -22,15 +22,15 @@ javascript:function getScript(url,success){var head=document.getElementsByTagNam
 
 ![Show only this frame screenshot](/setup-img/step3a.jpg)
 
-1. Click the bookmark you made and wait until it gives you an alert.
+3. Click the bookmark you made and wait until it gives you an alert.
 
 ![Ready to download screenshot](/setup-img/step3b.jpg)
 
-1. Right-click the page and select "DownThemAll!..."
+4. Right-click the page and select "DownThemAll!..."
 
 ![DTA screenshot](/setup-img/step4.jpg)
 
-1. Use DownThemAll! with renaming mask `*text*.*ext*` to download the videos with the correct filenames (see screenshot below)
+5. Use DownThemAll! with renaming mask `*text*.*ext*` to download the videos with the correct filenames (see screenshot below)
 
 ![DTA config screenshot](/setup-img/step5.jpg)
 
