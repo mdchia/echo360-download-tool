@@ -37,5 +37,7 @@ javascript:function getScript(url,success){var head=document.getElementsByTagNam
 ## Notes
 
 - If you close the Echo360 page or click on a link in that tab that takes you to a new page, you'll have to start again
+
 - You may have to scroll all the way to the bottom of the course list if you want to download the earliest echoes
+
 - If you want to run this again to download only new videos, set the destination in DownThemAll! to that which contains the first set of videos, and when it starts, will prompt you what to do -- just choose to automatically skip all existing files for the current session
