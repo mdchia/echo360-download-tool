@@ -1,6 +1,7 @@
 // Paste jQuery source first
 
-var delay = 1000;
+var max_delay = 1500;
+var min_delay = 1000;
 var course = $('#course-info').text();
 var downloads = [];
 var echoes = $('#echoes-list > li');
@@ -11,6 +12,11 @@ function pad(n, width, z) {
   z = z || '0';
   n = n + '';
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
+// Function from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
 }
 
 function numericReplaceMonth(rawDate) {
@@ -63,7 +69,7 @@ function scheduleGetNextVideoUrl(i, max) {
     echoes[i].click();
     setTimeout(function() {
       getNextVideoUrl(i, max);
-    }, delay);
+    }, getRandomArbitrary(min_delay, max_delay));
   } else {
     done();
   }
@@ -85,4 +91,5 @@ function done() {
     list.appendChild(li);
   })
   document.body.appendChild(list);
+  alert('Ready to download! Right click and choose "DownThemAll!..."');
 }
