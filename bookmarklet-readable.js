@@ -16,7 +16,7 @@ function getScript(url,success){
 }
 
 getScript('https://code.jquery.com/jquery-1.11.2.min.js',function(){
-  getScript('https://raw.githubusercontent.com/mdchia/echo360-download-tool/master/echo360-download-tool.js',function(){
+  getScript('https://cdn.rawgit.com/mdchia/echo360-download-tool/573d7667/echo360-download-tool.js',function(){
   });
 });
 
