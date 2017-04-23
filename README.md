@@ -8,7 +8,7 @@ A modification of [Brendan Weibrecht's](https://github.com/ZimbiX) Echo360 JS do
 2. Copy and paste the code below into the "Location" of a new bookmark.
 
 ```
-javascript:function getScript(url,success){var head=document.getElementsByTagName('head')[0],done=!1,script=document.createElement('script');script.src=url,script.onload=script.onreadystatechange=function(){done||this.readyState&&'loaded'!=this.readyState&&'complete'!=this.readyState||(done=!0,success())},head.appendChild(script)}getScript('https://code.jquery.com/jquery-1.11.2.min.js',function(){getScript('https://raw.githubusercontent.com/mdchia/echo360-download-tool/master/echo360-download-tool.js',function(){})});
+javascript:function getScript(t,e){var o=document.getElementsByTagName("head")[0],a=!1,c=document.createElement("script");c.src=t,c.onload=c.onreadystatechange=function(){a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(a=!0,e())},o.appendChild(c)}getScript("https://code.jquery.com/jquery-1.11.2.min.js",function(){getScript("https://cdn.rawgit.com/mdchia/echo360-download-tool/573d7667/echo360-download-tool.js",function(){})});
 ```
 
 ![Make a bookmark screenshot](/setup-img/step2a.jpg)
